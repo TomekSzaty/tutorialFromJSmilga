@@ -26,6 +26,7 @@ function BookList() {
       {/* <Book opis="szajs" />
       <Book okładka="twarda" cena={54 +"$"} />
       <Book okładka="miekka" opis="dobra"/> */}
+      <Navbar />
       <Book img={firstBook.img} 
             title={firstBook.title} 
             author={firstBook.author}/>
@@ -42,16 +43,25 @@ function BookList() {
 }
 
 const Book = (props) => {
+    const {img, title, author} = props;
   return (
     <article className='book'>
-        <img src={props.img} alt={props.title}/>
-        <h2>{props.title}</h2>
-        <h4>{props.author}</h4>
+        <img src={img} alt={title}/>
+        <h2>{title}</h2>
+        <h4>{author}</h4>
         {/* <p>{props.opis}</p>      
         <p>{props.okładka}</p>      
-        <p>{props.cena}</p>            */}
+        <p>{props.cena}</p>     */}
     </article>
   )
+}
+const Navbar = () => {
+    return(
+        <div className='navbar'>
+            <h1>Amazon Best Sellers Boook</h1>
+            <p>Our most popular products based on sales.</p>
+        </div>
+    )
 }
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
