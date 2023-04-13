@@ -10,6 +10,20 @@ body {
 	background: #f1f5f8;
 	color: #222;
 }
+.navbar {
+	width: 90vw;
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 2rem;
+	border-radius: 1rem;
+	background-color: rgba(10, 153, 175, 1);
+	font-family: Inter;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
 .booklist {
 	width: 90vw;
 	max-width: 1170px;
